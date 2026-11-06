@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UN Women - LFIGPMUN 2027</title>
+    
+<!-- Browser Tab Logo (Favicon) -->
+    <link rel="icon" type="image/png" href="IMG_4527.png">
+
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#0b1329',
+                        gold: '#d4af37',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .font-serif { font-family: 'Playfair Display', serif; }
+    </style>
+</head>
+<body class="bg-navy text-slate-100 min-h-screen flex flex-col justify-between">
+
+    <!-- Top Sticky Header Bar -->
+    <header class="bg-navy/90 backdrop-blur-md border-b border-slate-800 sticky top-0 z-50 px-6 py-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <!-- Back to main home page -->
+            <a href="index_mun.html" class="inline-flex items-center gap-2 text-gold hover:text-white font-semibold transition text-sm md:text-base">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
+                </svg>
+                <span class="content-en">Back to Committees</span>
+                <span class="content-fr hidden">Retour aux Comités</span>
+            </a>
+            
+            <div class="flex items-center gap-4">
+                <span class="hidden md:inline text-xs font-bold text-slate-400 uppercase tracking-widest">LFIGPMUN 2027</span>
+                <!-- Language Toggle Button -->
+                <button id="lang-toggle-btn" onclick="toggleLanguage()" class="border border-slate-600 hover:border-gold text-slate-300 hover:text-gold text-xs font-bold px-3 py-1.5 rounded transition">
+                    FR
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Banner with Homepage Campus Background -->
+<section class="relative py-24 md:py-32 bg-navy bg-[url('bgmun.png')] bg-cover bg-center">
+            <!-- Dark Overlay -->
+            <div class="absolute inset-0 bg-navy/60 backdrop-blur-xs"></div>
+
+            <div class="relative z-10 max-w-5xl mx-auto px-6 text-center">
+                <h1 class="font-serif text-3xl md:text-5xl font-bold text-white tracking-wide mb-3">
+                    <span class="content-en">UN Women</span>
+                    <span class="content-fr hidden">ONU Femmes</span>
+                </h1>
+                <p class="text-gold font-medium text-base md:text-lg">
+                    <span class="content-en">United Nations Entity for Gender Equality and Women's Empowerment</span>
+                    <span class="content-fr hidden">Entité des Nations Unies pour l'égalité des sexes et l'autonomisation des femmes</span>
+                </p>
+            </div>
+        </section>
+
+        <!-- 2. Committee Details Section -->
+        <section class="py-16 bg-navy border-t border-slate-800">
+            <div class="max-w-5xl mx-auto px-6 space-y-12">
+
+                <!-- Committee Intro Overview & Level Badge -->
+                <div class="space-y-4">
+                    <p class="font-sans text-slate-400 text-base md:text-lg leading-relaxed max-w-3xl">
+                        <span class="content-en">The UN entity focused on advancing gender equality and empowering women and girls. It works to eliminate discrimination, expand economic and political opportunities, and integrate gender perspectives into global development.
+</span>
+                        <span class="content-fr hidden">ONU Femmes œuvre pour l'élimination de la discrimination à l'égard des femmes et des filles, promouvant l'égalité des sexes comme pilier fondamental du développement international, des droits humains et de la paix.</span>
+                    </p>
+                                    </div>
+
+                <!-- Topic Split Card (Left Image / Right White Floating Box) -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-0 rounded-2xl overflow-hidden border border-slate-800 shadow-2xl">
+                    
+                    <!-- Topic Image -->
+                    <div class="lg:col-span-6 relative min-h-[300px] lg:min-h-[420px]">
+                        <img src="unwomenpic.jpg" 
+                             alt="Women Empowerment" 
+                             class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent lg:hidden"></div>
+                    </div>
+
+                    <!-- White Card Content -->
+                    <div class="lg:col-span-6 bg-white text-slate-800 p-8 md:p-10 flex flex-col justify-center relative">
+                        <!-- Bookmark Icon -->
+                        <div class="mb-3 text-navy">
+                            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                                <path d="M17 3H7c-1.1 0-1.99.9-1.99 2L5 21l7-3 7 3V5c0-1.1-.9-2-2-2z"/>
+                            </svg>
+                        </div>
+
+                        <!-- TOPIC TITLE -->
+                        <h2 class="font-serif text-xl md:text-2xl font-bold text-navy mb-4 leading-snug">
+                            <span class="content-en">Topic coming soon...</span>
+                            <span class="content-fr hidden">Sujet à venir...</span>
+                        </h2>
+
+                        <!-- TOPIC DESCRIPTION BODY -->
+                        <p class="text-slate-600 text-xs md:text-sm leading-relaxed mb-4 font-sans">
+                            <span class="content-en"></span>
+                            <span class="content-fr hidden"></span>
+                        </p>
+
+                                           </div>
+
+                </div>
+
+                <!-- 3. Background Guide Download Section -->
+                <div class="pt-8 text-center space-y-5">
+                    <h3 class="font-serif text-3xl font-bold text-white">
+                        <span class="content-en">Background Guide</span>
+                        <span class="content-fr hidden">Guide de Recherche</span>
+                    </h3>
+                    
+
+                    <div>
+                        <a href="assets/guides/unwomen-guide.pdf" target="_blank" class="inline-flex items-center gap-3 bg-gold hover:bg-yellow-400 text-navy font-bold px-8 py-3.5 rounded-xl shadow-lg transition transform hover:-translate-y-0.5">
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+                            </svg>
+                            <span class="content-en">Download Background Guide</span>
+                            <span class="content-fr hidden">Télécharger le Guide</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-6 border-t border-slate-800 text-center text-xs text-slate-500">
+        <p>© 2027 LFIGPMUN. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Language Toggle Script -->
+    <script>
+        let currentLang = localStorage.getItem('lfigp_lang') || 'en';
+
+        function applyLanguage(lang) {
+            currentLang = lang;
+            localStorage.setItem('lfigp_lang', lang);
+            const enElements = document.querySelectorAll('.content-en');
+            const frElements = document.querySelectorAll('.content-fr');
+            const btn = document.getElementById('lang-toggle-btn');
+
+            if (lang === 'fr') {
+                enElements.forEach(el => el.classList.add('hidden'));
+                frElements.forEach(el => el.classList.remove('hidden'));
+                if (btn) btn.textContent = 'EN';
+            } else {
+                frElements.forEach(el => el.classList.add('hidden'));
+                enElements.forEach(el => el.classList.remove('hidden'));
+                if (btn) btn.textContent = 'FR';
+            }
+        }
+
+        function toggleLanguage() {
+            applyLanguage(currentLang === 'en' ? 'fr' : 'en');
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            applyLanguage(currentLang);
+        });
+    </script>
+
+</body>
+</html>
